@@ -3,3 +3,87 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main{
+    height: 80vh;
+    
+    
+}
+#window{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    
+   
+}
+
+#maxContainer{
+    height: 100%;
+    
+}
+#contTitolo{
+    height: 20%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+#contReview{
+    height: 80%;
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+    
+}
+
+#contImmagine{
+    position: relative;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+
+img{
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid black; /* Scegli un colore che si abbini al design del tuo sito */
+    
+    animation: fadeIn 1s ease-in-out;
+}
+
+.img::before {
+    content: '“'; /* Simbolo di virgoletta */
+    position: absolute;
+    top: 10px; /* Ajusta questi valori per posizionare il badge come desiderato */
+    left: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    width: 20px; /* Dimensione del badge */
+    height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px; /* Centra verticalmente il testo nel badge */
+  }
+
+
+img, h2, p, button{
+    margin-bottom: 0.5rem;
+}
+
+button{
+    background-color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    color: blue;
+}
+
