@@ -2,10 +2,13 @@ let immagine = document.querySelector('img')
 let nomeCompleto = document.querySelector('#nome')
 let professione = document.querySelector('#lavoro')
 let recensione = document.querySelector('#review')
+let buttonAvanti = document.querySelector('#avanti')
+let buttonIndietro = document.querySelector('#indietro')
+let buttonRandom = document.querySelector('#randomButton')
 
 
 window.onload = () => {
-    
+
 }
 
 let arrReview = [
