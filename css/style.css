@@ -77,6 +77,9 @@ img, h2, p, button{
     margin-bottom: 0.5rem;
 }
 
+h2{
+    display: inline-block;
+}
 p .review{
     max-width: 50%;
     margin: auto;
