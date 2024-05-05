@@ -36,6 +36,8 @@ h1{
     width: 100%;
     margin-top: 3rem;
     text-align: center;
+    /* debug
+    background-color: yellow; */
     
 }
 
@@ -80,10 +82,12 @@ img, h2, p, button{
 h2{
     display: inline-block;
 }
-p .review{
+p#review{
     max-width: 50%;
     margin: auto;
     max-height: 7rem;
+    /* debug
+    background-color: red; */
 }
 
 #containerButton{
