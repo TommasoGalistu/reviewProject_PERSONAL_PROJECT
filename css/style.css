@@ -42,11 +42,11 @@ h1{
 #contImmagine{
     position: relative;
 }
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
   }
-  
+   */
 
 img{
     height: 10rem;
@@ -55,8 +55,7 @@ img{
     margin-top: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border: 2px solid black; /* Scegli un colore che si abbini al design del tuo sito */
-    
-    animation: fadeIn 1s ease-in-out;
+    /* animation: fadeIn 1s ease-in-out; */
 }
 
 .img::before {
@@ -78,6 +77,15 @@ img, h2, p, button{
     margin-bottom: 0.5rem;
 }
 
+p .review{
+    max-width: 50%;
+    margin: auto;
+    max-height: 7rem;
+}
+
+#containerButton{
+    margin-top: 1rem;
+}
 button{
     background-color: white;
     border: none;
