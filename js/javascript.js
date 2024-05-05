@@ -36,14 +36,14 @@ let arrReview = [
     recensione: 'Ho avuto il piacere di lavorare con questo sviluppatore e sono rimasto colpito dalla velocità con cui è stato in grado di ottimizzare il nostro sito web. Non solo ha migliorato i tempi di caricamento, ma ha anche assicurato che l’esperienza utente rimanesse fluida e intuitiva. È chiaro che la performance è una priorità assoluta per lui.'
 },  
 {
-    immagine: "../img/donna1.webp",
+    immagine: "../img/donna1.jpg",
     nome: 'barbara',
     cognome: 'papini',
     professione: 'psicoterapeuta',
     recensione: "Sono rimasto estremamente soddisfatto del livello di dettaglio che questo sviluppatore ha dedicato al nostro progetto. Ogni aspetto del sito è stato curato con precisione, dalle animazioni sottili ai gradienti di colore, tutto contribuisce a un’esperienza utente superiore."
 },
 {
-    immagine: "../img/donna2.webp",
+    immagine: "../img/donna2.jpg",
     nome: 'gaia',
     cognome: 'galistu',
     professione: 'ostetrica',
@@ -62,3 +62,23 @@ function personReview(){
     recensione.textContent = item.recensione
 }
 
+buttonAvanti.addEventListener('click', () => {
+    persona++
+    if(persona == arrReview.length){
+        persona=0
+    }
+    personReview()
+})
+
+buttonIndietro.addEventListener('click', () => {
+    persona--
+    if(persona < 0){
+        persona = arrReview.length -1
+    }
+    personReview()
+})
+
+buttonRandom.addEventListener('click', () => {
+    persona = Math.floor((Math.random()*3)+1)
+    personReview()
+})
